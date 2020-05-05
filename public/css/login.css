@@ -1,0 +1,17 @@
+html, body{margin: 0;padding:0;height: 100%;}
+
+body{background-color: black;}
+
+.container{height: 100vh;}
+
+.retorno{margin-top: 50px;}
+
+.card{top: 50%;margin-top: -221.5px}
+
+#a-icone{color: yellow;}
+
+#i-icone{float: left;}
+
+.btn-block{width: 170px;}
+
+@media screen and (max-width: 1000px){.card{width: 75%!important;} }

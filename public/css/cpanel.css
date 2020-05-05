@@ -1,0 +1,144 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+header{
+	position: absolute;
+	height: 44px;
+	width: 100%;
+	background-color: black;
+	z-index: 4;
+	position: fixed;
+}
+.nav-right{
+	margin-top: -30px;
+}
+.nav-right li{
+	display: inline;
+	float: right;
+}
+.nav-right a{
+	padding: 16px;
+	color: white;
+	text-decoration: none;
+}
+.nav-right i{
+	color: #00BFFF;
+}
+.navbar-toggler{
+	padding-top: 12px;
+}
+.navbar-toggler i{
+	color: #00BFFF;
+}
+#menu-vertical{
+	position: absolute;
+	width: 100%;
+	background-color: #111111;
+	height: 100vh;
+	z-index: 3;
+	padding-top: 44px;
+	position: fixed;
+	overflow: auto;
+}
+#menu-vertical ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu-vertical ul li{
+	padding: 20px 10px;
+	border-bottom: 1px solid #333;
+}
+#menu-vertical ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+#menu-vertical ul li i{
+	color: #00BFFF;
+}
+.dropdown{
+	display: none;
+}
+#menu-vertical .dropdown li{
+	border-bottom: unset;
+	padding: 5px 5px 5px 20px;
+}
+#menu-vertical .dropdown a{
+	color: #00FF00;
+}
+#main{
+	padding-top: 54px;
+	padding-left: 220px;
+}
+#nav-avatar{
+	width: 35px;
+	margin-top: 5px;
+}
+#nav-user{
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+.bottom{
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 600px){
+	.navbar-toggler{
+		float: right;
+	}
+	#menu-vertical{
+		height: unset;
+		display: none;
+		position: relative;
+		margin-bottom: -40px;
+	}
+	.nav-right{
+		display: none;
+	}
+	#nav-right-max-1000px li span{
+		color: #00BFFF;
+	}
+	#main{
+		padding-left: 15px;
+	}
+}
+@media screen and (min-width: 600px){
+	#menu-vertical{
+		width: 205px;
+	}
+	#menu-vertical ul li{
+		text-align: center;
+	}
+	#menu-vertical ul li span:nth-child(2){
+		display: block;
+	}
+	#menu-vertical ul li i{
+		font-size: 26px;
+	}
+	#menu-vertical .dropdown li{
+		text-align: left;
+	}
+	.navbar-toggler{
+		display: none;
+	}
+	#nav-right-max-1000px{
+		display: none;
+	}
+}
+@media screen and (min-width: 1000px){
+	#menu-vertical ul li{
+		text-align: left;
+	}
+	#menu-vertical ul li span:nth-child(2){
+		display: inline;
+	}
+	#menu-vertical ul li i{
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,17 @@
+/*#main{padding-top: 44px; padding-left: 205px; padding-right: 0px;}*/
+
+th{color: white; }
+
+tbody{text-align: center; }
+
+td ul{text-align: left; }
+
+.col-100px{min-width: 100px; }
+
+.col-200px{min-width: 200px; }
+
+.card-body{margin-top: 50px; }
+
+/*@media screen and (max-width: 600px){
+	#main{padding-left: 0; padding-right: 0;}
+}*/
